@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:macro name="rot_x_origin">
+        <origin rpy="0 ${pi/2} 0"/>
+    </xacro:macro>
+
+    <xacro:macro name="rot_y_origin">
+        <origin rpy="0 ${pi/2} ${pi/2}"/>
+    </xacro:macro>
+
+</robot>

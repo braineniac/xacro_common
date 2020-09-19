@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:macro name="rot_joint" params="parent child *origin *axis effort velocity damping">
+        <joint name="${parent}_${child}_joint" type="revolute">
+            <parent link="${parent}_link"/>
+            <child link="${child}_link"/>
+            <xacro:insert_block name="origin"/>
+            <xacro:insert_block name="axis"/>
+            <limit upper="${pi/2}" lower="-${pi/2}" effort="${effort}" velocity="${velocity}"/>
+            <dynamics damping="${damping}"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="fixed_joint" params="parent child *origin">
+        <joint name="${parent}_${child}_joint" type="fixed">
+            <parent link="${parent}_link"/>
+            <child link="${child}_link"/>
+            <xacro:insert_block name="origin"/>
+        </joint>
+    </xacro:macro>
+
+
+</robot>

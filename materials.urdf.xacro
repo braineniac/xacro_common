@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <material name="blue">
+        <color rgba="${71/360} ${147/360} ${255/360} 1.0"/>
+    </material>
+  
+    <material name="green">
+        <color rgba="${71/360} ${255/360} ${86/360} 1.0"/>
+    </material>
+  
+    <material name="grey">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+    </material>
+  
+    <material name="grey2">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+    </material>
+  
+    <material name="yellow">
+        <color rgba="${239/360} ${255/360} ${71/360} 1.0"/>
+    </material>
+  
+    <material name="red">
+        <color rgba="${255/360} ${86/360} ${71/360} 1.0"/>
+    </material>
+  
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1.0"/>
+    </material>
+
+
+</robot>

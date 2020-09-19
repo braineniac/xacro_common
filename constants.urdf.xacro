@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:property name="rho_Fe" value="7874"/>
+    <xacro:property name="rho_PLA" value="1024"/>
+
+
+</robot>

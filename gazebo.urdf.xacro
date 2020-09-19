@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:macro name="gaz_link" params="prefix material mu1 mu2">
+        <gazebo reference="${prefix}_link">
+            <material>${material}</material>
+            <mu1>${mu1}</mu1>
+            <mu2>${mu2}</mu2>
+        </gazebo>
+    </xacro:macro>
+
+
+</robot>

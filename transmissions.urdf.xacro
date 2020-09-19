@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:macro name="effort_trans" params="parent child">
+        <transmission name="${parent}_${child}_trans">
+            <type>EffortJointInterface</type>
+            <actuator name="${parent}_${child}_joint_motor">
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="${parent}_${child}_joint">
+                <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+    </xacro:macro>
+
+
+</robot>
