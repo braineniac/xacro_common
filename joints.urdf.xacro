@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
-    <xacro:macro name="rot_joint" params="parent child *origin *axis effort velocity damping">
+    <xacro:macro name="rot_joint" params="parent child effort velocity damping *origin *axis ">
         <joint name="${parent}_${child}_joint" type="revolute">
             <parent link="${parent}_link"/>
             <child link="${child}_link"/>

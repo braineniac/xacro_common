@@ -2,6 +2,10 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
+    <xacro:macro name="world">
+        <link name="world"/>
+    </xacro:macro>
+
     <xacro:macro name="base">
         <link name="base_link"/>
     </xacro:macro>

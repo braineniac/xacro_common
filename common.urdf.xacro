@@ -2,6 +2,10 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
+    <xacro:macro name="default_origin">
+        <origin rpy="0 0 0"/>
+    </xacro:macro>
+
     <xacro:macro name="rot_x_origin">
         <origin rpy="0 ${pi/2} 0"/>
     </xacro:macro>
